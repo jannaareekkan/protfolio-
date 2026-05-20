@@ -1,0 +1,78 @@
+  <!DOCTYPE html>
+  <html >
+  <head>
+      
+      <title>portfolio</title>
+      <link rel="stylesheet" href="protfolio 2.css">
+      <script type="text/javascript"
+          src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+  <script src="protfolio 2.js"></script>
+  <script type="text/javascript">
+    (function(){
+        emailjs.init({
+          publicKey: "XOIW9_8CCXb6s7cke",
+        });
+    })();
+  </script>
+  </head>
+  <body>
+  <header>
+    <div class="head">protfolio</div>
+    <nav class="navbar">
+      <ul>
+        <Li>
+          <a href="#home">Home</a>
+        </Li>
+        <li>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <a href="#skill">Skill</a>
+        </li>
+        <li>
+          <a href="project">Project</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <secion id="home" class="home-section">
+    <div class="home-content">
+      <h2>Hello, I`m Janna </h2>
+      <h3> Aspirising web developer</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio</p>
+      <div >
+        <button class="button" > Hire me</button>
+    
+    </div>
+    
+  </div>
+
+  <div class="photo">
+    <img src="picture/my photo.jpeg">
+  </div>  
+  </secion>
+  <section>
+    <div class="about-content">
+      <h2>About</h2>
+      <h3>Intern at Bridgeon</h3>
+      <h2>skill</h2>
+      <h3>html,css</h3>
+      <h2>project</h2>
+      <h3>w3 school navbar</h3>
+    </div>
+  </section>
+  <section>
+    <div class="contact">
+      <h4>contact me</h4>
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" placeholder="Enter your name"><br><br>
+      <label for="Email">Email:</label><br>
+      <input type="email" id="Email" placeholder="Enter your email"><br><br>
+      <textarea id="message" rows="3" class="form-control"></textarea><br>
+      <input type="button" onclick="sendMail()" value="send message">
+    </div>
+    
+  </section>
+  </body>
+  </html>
